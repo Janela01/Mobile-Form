@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral|Rubik">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mobile Form</title>
+      <link rel="stylesheet" href="index.css">
+</head>
+<body>
+      <h1>Add New Mobile Phones :</h1>
+      <div class="wrapper">
+            <div class="el1 el">
+                  <form id="mobile">
+                        <fieldset id="mobileField">
+                              <legend>Mobile Form</legend>
+                              <div class="field">
+                                    <label><b>Enter Brand : </b></label><br>
+                                    <select id="brands" required>
+                                          <option value="Samsung">Samsung</option>
+                                          <option value="Apple">Apple</option>
+                                          <option value="Asus">Asus</option>
+                                          <option value="Google">Google</option>
+                                          <option value="Xiaomi">Xiaomi</option>
+                                          <option value="Add new brand">Add new brand</option>
+                                    </select><br><br>
+                              </div>
+                              <div class="field">
+                                    <label><b>Enter Model : </b></label><br>
+                                    <input type="text" placeholder="Mobile Model" id="model" autocomplete="off" required><br><br>
+                              </div>
+                              <div class="field">
+                                    <label><b>Enter Year : </b></label><br>
+                                    <input type="number" min="2016" max="2023" value="2022" id="year" required> <br><br>
+                              </div>
+                              <div class="field">
+                                    <label><b>Enter Price In $ : </b></label><br>
+                                    <input type="number" value="1000" id="price" required> <br><br>
+                              </div>
+                              <div class="field">
+                                    <label><b>Check If It's Used : </b></label><br>
+                                    <input type="checkbox" id="condition" value="1"><br>
+                              </div>
+                              <input type="submit" id="submit">
+                              
+                        </fieldset>
+                  </form>
+            </div>
+            <div class="el2 el">
+                  <div class="her">
+                        <h3 id="head"></h3>
+                        <button onclick="whenclicked()">Clear Storage</button>
+                  </div>
+                  <p id="history"></p>
+            </div>
+      </div>
+      <script src="main.js"></script>
+</body>
+</html>
